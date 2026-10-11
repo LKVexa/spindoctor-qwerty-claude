@@ -26,6 +26,7 @@ then build and run circuits with SpinDoctor's `q.*` commands, run any of the 241
 | --- | --- |
 | claude.ai chat or Cowork (upload a `.plugin` file), or one plugin that works across claude.ai, Cowork and Claude Code | **this repo**, `spindoctor-qwerty-claude` |
 | Claude Code only, and want CLI-first slash commands (run, script, preset, folder, report, functions, theory), a subagent, a Windows Python switcher and a team settings file | [spindoctor-qwerty-claude-code](https://github.com/LKVexa/spindoctor-qwerty-claude-code) |
+| Claude Desktop chat, tools only, one-click install (Settings > Extensions, `.mcpb`) | [spindoctor-qwerty-claude-desktop](https://github.com/LKVexa/spindoctor-qwerty-claude-desktop) |
 
 Both bundle the same engine and give the same results. In Claude Code, enable only **one** of them, because both start the same
 six tools. The plugin names differ (`spindoctor-qwerty` here, `spindoctor-qwerty-code` there), so their commands never clash.
