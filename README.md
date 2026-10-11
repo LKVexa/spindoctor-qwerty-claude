@@ -20,6 +20,16 @@ then build and run circuits with SpinDoctor's `q.*` commands, run any of the 241
 > (2^n x 16 bytes; about 22 qubits with the standard library, more with NumPy). Registers wider than 29 qubits sample in basis Z only.
 > Python 3.8 or newer is required (`python3` on PATH).
 
+## Which repository should I use?
+
+| You use... | Choose |
+| --- | --- |
+| claude.ai chat or Cowork (upload a `.plugin` file), or one plugin that works across claude.ai, Cowork and Claude Code | **this repo**, `spindoctor-qwerty-claude` |
+| Claude Code only, and want CLI-first slash commands (run, script, preset, folder, report, functions, theory), a subagent, a Windows Python switcher and a team settings file | [spindoctor-qwerty-claude-code](https://github.com/LKVexa/spindoctor-qwerty-claude-code) |
+
+Both bundle the same engine and give the same results. In Claude Code, enable only **one** of them, because both start the same
+six tools. The plugin names differ (`spindoctor-qwerty` here, `spindoctor-qwerty-code` there), so their commands never clash.
+
 ## What runs where
 
 | Surface | What loads | How SpinDoctor runs |
