@@ -60,4 +60,12 @@ The 5 documented preset differences are the engine's known, accepted work-accoun
 
 ## Post-push check
 
-See the bottom of this file after publication.
+After publishing (commit df8a9fd3034e6117c5e69cbc6dafcc064cc53c04), the repo was cloned back from GitHub into a fresh folder:
+
+- 56/56 files byte-identical to the staged copy; the clone's working tree stayed clean after the tests.
+- **Real Claude Code, straight from GitHub:** `claude plugin marketplace add LKVexa/spindoctor-qwerty-claude` +
+  `claude plugin install spindoctor-qwerty@spindoctor-qwerty-claude` -> 1.1.0 enabled, copied to
+  `~/.claude/plugins/cache/spindoctor-qwerty-claude/spindoctor-qwerty/1.1.0/`; `claude mcp list` -> **Connected**; end-to-end against that
+  GitHub-installed copy **12/12**.
+- From the clone, empty environment: `tests/claude_host_check.py` with real Claude Code **16/16** (end-to-end 12/12); without Claude Code
+  **9/9** (end-to-end 12/12).
